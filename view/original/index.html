@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Brian Berg's Home</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script> 
+	<script type="text/javascript">
+		<!--var timerID = null;
+		var timerRunning = false;
+		function stopclock (){        
+			if(timerRunning) 
+				clearTimeout(timerID);
+				timerRunning = false;
+		}
+
+		function startclock () {   
+			 // Make sure the clock is stopped        
+			stopclock();
+				showtime();
+		}
+		function showtime () {  
+			  var now = new Date();  
+			  var hours = now.getHours();   
+			  var minutes = now.getMinutes(); 
+			  var seconds = now.getSeconds()  
+			  var timeValue = "" + ((hours >12) ? hours -12 :hours)    
+			  timeValue += ((minutes < 10) ? ":0" : ":") + minutes       
+			  timeValue += ((seconds < 10) ? ":0" : ":") + seconds        
+			  timeValue += (hours >= 12) ? " P.M." : " A.M."        
+			  document.clock.face.value = timeValue;  
+
+			  // you could replace the above with this
+
+			  // and have a clock on the status bar:        
+
+			  // window.status = timeValue;        
+
+			  timerID = setTimeout("showtime()",1000);        
+			  timerRunning = true;}// Netscapes Clock - Stop
+
+	// end Helpers --></script>
+
+</head>
+
+<body onLoad="startclock()">
+  <div id="main">
+    <header>	
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Brian<span class="logo_colour">Berg</span></a></h1>
+          <h2>Striving to meet your business needs.</h2>
+        </div>
+      </div>
+      <nav>
+        <div id="menu_container">
+		<ul class="sf-menu" id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="family.html">Family</a></li>
+			 <li><a href="hobbies.html">Hobbies & Interests</a></li>
+            <li><a href="#">My Work</a>
+              <ul>
+				<li><a href="#">CSUPomona Work</a></li>
+                <li><a href="../scrum/index.html">CIS 231 Scrum Website</a></li>
+                <li><a href="cis304/cis304.html">CIS 304 Java Applet</a>
+                </li>
+               <!-- <li><a href="#">CIS 305 Database</a>
+				 <ul>
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
+                  </ul>
+				</li>
+                <li><a href="#">USCC CyberQuest Certificate</a></li>-->
+              </ul>
+            </li>
+			<li><a href="aboutme.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+
+		<img src="images/brian.jpg" alt="A picture of Me" width="100%"/>
+		
+		<center><form name="clock" onSubmit="0" >
+			<dl>
+			It is currently: <dd align="center"><p><input type="text" name="face" size="9" style="background: transparent; color: rgb(255,255,255); border: none"></dd>
+			</dl>
+		</form>
+		</center>
+        </div>
+      </div>
+      <div class="content"> 
+        <h1>Welcome to Brian Berg's Website</h1>
+		<p>Hello my name is Brian Berg. In this site you will find various links to my school work along with other information about me. Eventually this site will contain all of the work that I have completed at Cal Poly Pomona along with some of my work from when I was attending Glendale Community College. I will even host some of the work that I have done outside of school to give a good background of my skills and knowledge. Soon I hope to add a resume that will be formatted for the website, but will also have a printable version so that you will not have to 
+download a file to view it, for your convenience. </p>
+
+		<p>I strive to put out the best finished product I can with the skills I have, and if I do not have the skills I try my hardest to master them to provide the highest quality possible. Once again I sincerely hope that you find my work to your liking and that my site is up to your expectations of workmanship that you design in your company's workforce!
+		</p>		
+      </div>
+    </div>
+    <footer>	
+	  <p>Copyright &copy; Brian Berg | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

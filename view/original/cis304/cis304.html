@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Java Applet</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="http://www.bnberg.com/css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="http://www.bnberg.com/js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="http://www.bnberg.com">Brian<span class="logo_colour">Berg</span></a></h1>
+          <h2>Striving to meet your business needs.</h2>
+        </div>
+      </div>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="http://www.bnberg.com">Home</a></li>
+            <li><a href="http://www.bnberg.com/resume.html">Resume</a></li>
+            <li><a href="http://www.bnberg.com/family.html">Family</a></li>
+			 <li><a href="http://www.bnberg.com/hobbies.html">Hobbies & Interests</a></li>
+            <li><a href="#">My Work</a>
+              <ul>
+				<li><a href="#">CSUPomona Work</a></li>
+                <li><a href="http://www.bnberg.com/scrum">CIS 231 Scrum Website</a></li>
+                <li><a href="http://bnberg.com/cis304/cis304.html">CIS 304 Java Applet</a>
+                </li>
+                <!--<li><a href="#">CIS 305 Database</a>
+				 <ul>
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
+                  </ul>
+				</li>
+                <li><a href="#">USCC CyberQuest Certificate</a></li> --> 
+              </ul>
+            </li>
+			<li><a href="http://www.bnberg.com/aboutme.html">About Me</a></li>
+            <li><a href="http://www.bnberg.com/contact.php">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+        </div>
+      </div>
+      <div class="content">
+		<h1>CIS 304: Project 3</h1>
+		<p>This is the final project from my intermediate java class at Cal Poly Pomona. It is the culmination of an entire quarter of work all the way from commandline to an online java applet.</p>
+		<p>Borrower IDs are: 001, 002, and 003. This applet will validate all input accepted into it and prompt you to correct that information if needed.</p>
+		<Applet code =LibraryApplet.class WIDTH=950 HEIGHT=450 >
+
+		<param name="BorrowerFile" value="borrowers.txt">
+		<param name="ItemFile" value="items.txt">
+		<param name="Copy" value="Copyright 2012">
+		<param name="Welcome" value="Welcome to the Library Lending System">
+		<param name="Creator" value="created by Brian Berg">
+      </div>
+    </div>
+    <footer>
+      <p>Copyright &copy; Brian Berg | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

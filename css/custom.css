@@ -1,0 +1,37 @@
+        html,
+        body {    
+            height: 100%;
+            /* The html and body elements cannot have any padding or margin. */
+        }
+        body {
+            background-image: url('../img/bg.jpg');
+        }
+
+        #wrap {
+            min-height: 100%;
+        }
+
+        #main {
+            overflow: auto;
+            padding-top: 60px;
+            padding-bottom: 160px;
+        }
+        #push {
+            height: 50px;
+        }
+        #footer {
+            position: relative;
+            margin-top: -160px; /* negative value of footer height */
+            height: 160px;
+            clear: both;
+        }
+        #copyRight {
+            text-align: center;
+            padding-top: 30px;
+            color: gray;
+            font-size: 12px;
+        }
+        #copyRight p {
+            text-align: center;
+            font-size: 10px;
+        }

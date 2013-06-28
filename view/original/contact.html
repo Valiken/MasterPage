@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Contact Me</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://html5form.googlecode.com/svn/trunk/jquery.html5form-1.5-min.js"></script>
+  <script src="js/contact.js"></script> 
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Brian<span class="logo_colour">Berg</span></a></h1>
+          <h2>Striving to meet your business needs.</h2>
+        </div>
+      </div>
+      <nav>
+        <div id="menu_container">
+            <ul class="sf-menu" id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="family.html">Family</a></li>
+			 <li><a href="hobbies.html">Hobbies & Interests</a></li>
+            <li><a href="#">My Work</a>
+              <ul>
+				<li><a href="#">CSUPomona Work</a></li>
+                <li><a href="../scrum/index.html">CIS 231 Scrum Website</a></li>
+                <li><a href="cis304/cis304.html">CIS 304 Java Applet</a>
+                </li>
+               <!-- <li><a href="#">CIS 305 Database</a>
+				 <ul>
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
+                  </ul>
+				</li>
+                <li><a href="#">USCC CyberQuest Certificate</a></li>-->
+              </ul>
+            </li>
+			<li><a href="aboutme.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+		  <h3>You can also</h3>
+          <h4>Contact me by:</h4>
+        </div>
+        <div class="sidebar">
+          <ul>
+            <li><a href="https://www.facebook.com/BNBerg">Facebook</a></li>
+            <li><a href="http://www.linkedin.com/pub/brian-berg/32/526/276/">LinkedIn</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Contact Me</h1>
+        <p>Say hello, using this contact form.</p>
+			<form  action="mail.php" method="post" id="contact_form" class="form_settings">
+        
+			<label for="name">Name</label><br />
+			<input type="text" name="name" id="name" title="Name" maxlength="60" placeholder="Name" autocomplete="off" required/><br />
+			
+			<label for="email">Email address</label><br />
+			<input type="email" name="email" id="email" title="Email address" maxlength="40" placeholder="Email address" autocomplete="off" required/><br />
+			
+			<label for="website">Company Name (Optional)</label><br />
+			<input type="text" name="company" id="company" title="Company Name" maxlength="40" placeholder="Company Inc." autocomplete="off" /><br />
+        
+			<label for="comment">Comment (max 100)</label><br />
+			<textarea name="comment" id="comment" title="Comment" cols="30" rows="5" maxlength="100" placeholder="Comment...">
+			</textarea><br />
+        
+			<input type="submit" value="Send" class="submit"/>
+    
+			</form>
+			
+          </div>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright &copy; Brian Berg | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>
